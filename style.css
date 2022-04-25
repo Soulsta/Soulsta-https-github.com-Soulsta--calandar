@@ -1,0 +1,91 @@
+button{
+ border: 2px solid black;
+ background-color: white;
+ color: black;
+ padding: 14px 28px;
+ font-size: 16px;
+cursor: pointer;
+
+}
+
+    .prevMonth{
+    border-color:black;
+    color:black ;   
+    }
+
+.nextMonth{
+border-color: black;
+color: black;
+
+}
+
+.monthname{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin:auto;   
+    border: black solid 2px;
+    background-color: white;
+    width: 836px;
+    flex-wrap: wrap;
+}
+/*The header of the calandar*/
+h1{
+
+    font-size: 14px;
+    padding: 5%;
+     text-align: center;
+    margin: auto;
+    border:solid 2px black;
+    border: width 1px; ;
+}
+
+/*this is the whole calandar body */
+.calender-body{
+    display: flex;
+    width: 55%;
+    height: 100%;
+    margin:auto;   
+    border: black solid 2px;
+    
+    flex-flow: row;
+    flex-wrap: wrap;
+    
+}
+/*the weekdays use border to determine the width*/
+.calender-weekDays{
+    display: flex;
+    padding: 1%;
+    column-gap: 5%;
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+    flex-direction: row;
+    border: 1px solid black;
+    flex: content;
+    border-left: 1px black solid ;
+    border-right: 1px black solid;
+}
+/*th3 days  using color to see width and so on */
+.calender-monthDays{
+    display: flex;
+    padding: 1%;
+    column-gap: 4%;
+    row-gap: 2%;
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    width: 1000px;
+    height:200px ;
+    flex-direction: row;
+}
+
+/*color fade for the days that have passed */
+        .prev-date, .next-date{
+        opacity: 0.5;
+        border-radius: 12px;
+        }
+  
